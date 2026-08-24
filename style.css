@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #070a08;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    background: rgba(7, 10, 8, 0.97);
+    border-bottom: 1px solid #1d2b22;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 130px;
+    height: auto;
+    display: block;
+}
+
+.footer-logo {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.footer-logo span,
+h1 span,
+h2 span {
+    color: #174d32;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    font-size: 13px;
+    font-weight: 600;
+    color: #cccccc;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2f8054;
+}
+
+.btn-agendar,
+.btn-primary {
+    background: #174d32;
+    color: #ffffff;
+    padding: 13px 23px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+.btn-agendar:hover,
+.btn-primary:hover {
+    background: #246b45;
+    transform: translateY(-2px);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    background:
+        linear-gradient(
+            90deg,
+            #070a08 20%,
+            rgba(7, 10, 8, 0.90) 55%,
+            rgba(7, 10, 8, 0.65)
+        ),
+        radial-gradient(
+            circle at 75% 50%,
+            #163a28,
+            #070a08 60%
+        );
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-title {
+    color: #2f8054;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(50px, 7vw, 88px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    color: #b7b7b7;
+    max-width: 540px;
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-secondary {
+    border: 1px solid #34473c;
+    padding: 13px 23px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    border-color: #2f8054;
+    color: #2f8054;
+}
+
+/* SEÇÕES */
+
+.section {
+    padding: 100px 8%;
+    background: #0b100d;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title p {
+    color: #2f8054;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(35px, 5vw, 55px);
+}
+
+/* SERVIÇOS */
+
+.services {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: #101712;
+    border: 1px solid #1d2b22;
+    padding: 40px 30px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    border-color: #2f8054;
+}
+
+.service-icon {
+    font-size: 30px;
+    color: #2f8054;
+    margin-bottom: 25px;
+}
+
+.service-card h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.service-card strong {
+    color: #2f8054;
+    font-size: 13px;
+}
+
+.price-note {
+    text-align: center;
+    color: #666;
+    font-size: 11px;
+    margin-top: 35px;
+}
+
+/* SOBRE */
+
+.about {
+    padding: 100px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    background: #070a08;
+}
+
+.about-image {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        radial-gradient(
+            circle,
+            #163a28,
+            #0b100d 65%
+        );
+    border: 1px solid #1d2b22;
+}
+
+.image-placeholder {
+    width: 180px;
+    height: 180px;
+    border: 1px solid #2f8054;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-placeholder img {
+    width: 110%;
+    height: auto;
+    object-fit: contain;
+}
+
+.about-content h2 {
+    margin-bottom: 25px;
+}
+
+.about-content > p {
+    color: #999;
+    line-height: 1.9;
+    font-size: 15px;
+    max-width: 500px;
+}
+
+.rating {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.rating strong {
+    color: #2f8054;
+    letter-spacing: 4px;
+}
+
+.rating span {
+    color: #aaa;
+    font-size: 13px;
+}
+
+/* CONTATO */
+
+.contact {
+    padding: 100px 8%;
+    background: #0b100d;
+}
+
+.contact-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-card {
+    text-align: center;
+    padding: 35px 25px;
+    border: 1px solid #1d2b22;
+    background: #101712;
+}
+
+.contact-card > span {
+    font-size: 28px;
+}
+
+.contact-card h3 {
+    margin: 18px 0 12px;
+    font-family: 'Cinzel', serif;
+}
+
+.contact-card p {
+    color: #999;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.contact-card a {
+    display: inline-block;
+    color: #2f8054;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 40px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #1d2b22;
+    background: #070a08;
+}
+
+footer p {
+    color: #666;
+    font-size: 11px;
+}
+
+/* WHATSAPP */
+
+.whatsapp {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    padding: 15px 20px;
+    background: #174d32;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    z-index: 200;
+    transition: 0.3s;
+}
+
+.whatsapp:hover {
+    transform: translateY(-4px);
+    background: #246b45;
+}
+
+/* CELULAR */
+
+@media (max-width: 800px) {
+
+    .header {
+        height: auto;
+        padding: 20px 6%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .btn-agendar {
+        padding: 10px 15px;
+    }
+
+    .hero {
+        min-height: 600px;
+        padding: 70px 7%;
+    }
+
+    h1 {
+        font-size: 52px;
+    }
+
+    .services,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 70px 7%;
+    }
+
+    .about-image {
+        min-height: 320px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+.service-time {
+    display: block;
+    color: #999;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.service-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background: #174d32;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.service-button:hover {
+    background: #246b45;
+    transform: translateY(-2px);
+}

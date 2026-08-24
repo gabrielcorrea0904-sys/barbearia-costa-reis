@@ -1,0 +1,1 @@
+console.log("Barbearia Costa Reis - site carregado!");
